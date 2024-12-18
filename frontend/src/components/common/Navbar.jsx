@@ -6,7 +6,7 @@ import { FiMenu } from "react-icons/fi";
 import "./Navbar.css";
 import CipherText from "./buttons/cipherText";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -282,6 +282,14 @@ const Navbar = () => {
               >
                 <CipherText detail={{ value: 'Whitepaper' }} />
               </a>
+            </li>
+            <li className="flex items-center justify-center">
+              <Link
+                to="/whales"
+                className="h-[67px] flex items-center px-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-[4px] before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-gradient-to-r before:from-blue-400 before:to-green-500 before:absolute before:left-0 before:bottom-0"
+              >
+                <CipherText detail={{ value: 'Whales' }} />
+              </Link>
             </li>
           </ul>
         </div>
